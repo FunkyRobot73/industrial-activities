@@ -2,5 +2,58 @@
 <%- include("banner")-%>
 
 
+<div class="container forms border">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"> 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<h1 style="padding:.5em">Careers - Apply Now</h1>
+<form>
+  <div class="form-group row">
+    <label class="col-2 col-form-label" for="fname">Full Name</label> 
+    <div class="col-10">
+      <input id="fname" name="fname" placeholder="Clark Kent" type="text" aria-describedby="fnameHelpBlock" pattern=".{8,}" required="required" class="form-control"> 
+      <span class="validity"></span>
+    <p>Full Name please with min 8 characters in length.</p>
+      <span id="fnameHelpBlock" class="form-text text-muted">Full Name please...</span>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="experience" class="col-2 col-form-label">Experience</label> 
+    <div class="col-10">
+      <input id="experience" name="experience" placeholder="5" type="number" aria-describedby="experienceHelpBlock" class="form-control"> 
+      <span id="experienceHelpBlock" class="form-text text-muted"># of Years Experience</span>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="vacancies" class="col-2 col-form-label">Vacancies</label> 
+    <div class="col-10">
+      <select id="vacancies" name="vacancies" required="required" class="custom-select">
+        <option value="android">Android Developer</option>
+        <option value="fullstack">Full Stack Developer</option>
+        <option value="consultant">Consultant</option>
+        <option value="research">Research Development</option>
+      </select>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="job-type" class="col-2 col-form-label">Job Type</label> 
+    <div class="col-10">
+      <select id="job-type" name="job-type" class="custom-select">
+        <option value="full-time">Full-Time</option>
+        <option value="part-time">Part-Time</option>
+        <option value="freelance">Freelance</option>
+        <option value="internship">Internship</option>
+      </select>
+    </div>
+  </div> 
+  <div class="form-group row">
+    <div class="offset-2 col-10">
+      <button name="submit" type="submit" class="btn btn-primary">Submit</button>
+    </div>
+  </div>
+</form>
+
+</div>
 
 <%- include("footer")-%>

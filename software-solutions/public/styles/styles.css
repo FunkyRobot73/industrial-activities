@@ -1,3 +1,7 @@
+body {
+  background-color: #A1A2A4 !important;
+}
+
 .logo-image {
   max-width: 60% !important;
   min-height: 100px;
@@ -69,4 +73,42 @@
 
 .link-footer:hover {
   color: #fff;
+}
+
+.table-01 {
+  display: flex;
+  flex-direction: column;
+  justify-content:space-around;
+  margin-bottom: 4rem;
+  margin-top: 4rem;
+}
+
+.fields {
+  margin-bottom: 4rem;
+  margin-top: 4rem;
+}
+
+.forms {
+  margin-bottom: 4rem;
+  margin-top: 4rem;
+  background-color: #d7d8d8;
+  padding: 1rem;
+  border-radius: 2%;
+}
+
+
+header {
+  position:fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #333;
+  color:#fff;
+}
+
+footer {
+  /* position:fixed; */
+  bottom: 0;
+  width: 100%;
+  background-color: #333;
+  color:#fff;
 }

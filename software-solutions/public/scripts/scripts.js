@@ -28,7 +28,18 @@ function sumNumbers(array) {
 let array01 = [25,5,8,35,4,9,12,1,3,10]
 let array02 = [5,8,4,9,12];
 
-console.log(bubblesort(array01));
-console.log(bubblesort(array02));
-console.log(sumNumbers(array01));
-console.log(sumNumbers(array02));
+function printArray(arr) {
+  for (let q = 0; q < array.length; q++) {
+    console.log(array[q]);
+    
+  }
+}
+
+document.getElementById("demo-01").innerHTML = (bubblesort(array01));
+document.getElementById("demo-02").innerHTML = (bubblesort(array02));
+
+document.getElementById("demo-03").innerHTML = (sumNumbers(array01));
+document.getElementById("demo-04").innerHTML = (sumNumbers(array02));
+
+document.getElementById("demo-05").innerHTML = (printArray(array01));
+document.getElementById("demo-06").innerHTML = (printArray(array02));

@@ -12,6 +12,10 @@ app.get("/", function(req, res) {
   res.render("index");
 });
 
+app.get("/regrets", function(req, res) {
+  res.render("regrets");
+});
+
 app.get("/customers", function(req, res) {
   res.render("customers");
 });

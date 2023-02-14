@@ -18,22 +18,18 @@
   
     <!-- NAVBAR -->
 
-    <nav class="navbar navbar-expand-lg bg-body-tertiary main-body2">
-      <div class="container-fluid text-bg-info p-3">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item">
+    <nav class="navbar navbar-expand-lg menu-bg main-body2" data-bs-theme="dark">
+      
+        <div class="collapse navbar-collapse menu-bg-blue" id="navbarNavDropdown">
+          <ul class="navbar-nav menu-bg-blue">
+            <li class="nav-item menu-bg-blue">
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Scientists</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Upcomin Events</a>
+              <a class="nav-link" href="#">Upcoming Events</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Articles</a>
@@ -57,9 +53,9 @@
 
     <div class="bio-info main-body2">
       <div>
-        <img src="images/henrietta.webp" alt="Henrietta Lacks" id="profile-image">
+        <img src="images/henrietta.webp" class="" alt="Henrietta Lacks" id="profile-image">
       </div>
-      <div class="profile-info-container">
+      <div class="profile-info-container shadow-lg">
         <div class="profile-info label">Henrietta Lacks</div>
         <div class="profile-info"><label class="label">Born: </label> August 1, 1920</div>
         <div class="profile-info"><label class="label">Death: </label> October 4, 1951</div>
@@ -68,7 +64,7 @@
       </div>
       <div class="profile-bio">
         <h5>
-          Henrietta Lacks (American: August 1, 1920 - October 4, 1951)
+          Henrietta Lacks (August 1, 1920 - October 4, 1951)
         </h5>
         <p>
           An African-American woman whose cancer cells are the source of the HeLa cell line, the first immortalized human cell line and one of the most important cell lines in medical research. An immortalized cell line reproduces indefinitely under specific conditions, and the HeLa cell line continues to be a source of invaluable medical data to the present day.
@@ -78,36 +74,53 @@
         </p>
       </div>
     </div>
+    
+    <!-- Upcoming Events -->
 
-    <div class="spacer">
-      <div class="container">
-        <h1 class="h1-header-2">Upcoming Events</h1>
-        <div class="container-1">
-          <div class="container-2">
-            <div class="upcoming-events">Tania's Birthday</div>
-            <div class="upcoming-events">Scotia Bank Center</div>
+    <div class="container text-center">
+      <h1>Upcoming Events</h1>
+        <div class="row">
+          <div class="col">
+            <div class="container-2 shadow-lg">
+            <div class="upcoming-events">Book Signing</div>
+            <div class="upcoming-events">Central Library</div>
             <div class="upcoming-events">Feb. 13, 2023</div>
           </div>
-          <div class="container-2">
-            <div class="upcoming-events">Adele's Birthday</div>
-            <div class="upcoming-events">Scotia Bank Center</div>
-            <div class="upcoming-events">Sept. 24, 2023</div>
           </div>
-          <div class="container-2">
-            <div class="upcoming-events">Carlos' Birthday</div>
-            <div class="upcoming-events">Scotia Bank Center</div>
-            <div class="upcoming-events">Oct. 16, 2023</div>
+          <div class="col">
+            <div class="container-2 shadow-lg">
+              <div class="upcoming-events">123rd Birthday</div>
+              <div class="upcoming-events">Liuna Station</div>
+              <div class="upcoming-events">Aug.1, 2023</div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="container-2 shadow-lg">
+              <div class="upcoming-events">Fundraiser</div>
+              <div class="upcoming-events">Scotia Bank Center</div>
+              <div class="upcoming-events">Sept. 24, 2023</div>
+            </div>
           </div>
         </div>
+
+        
+        <!-- Button -->
+        
+        <div class="button-style">
+          <button type="button" class="btn btn-primary">Style Me</button>
+        </div>
       </div>
-      <div class="button-style"><button type="button" class="btn btn-primary">Style Me</button></div>
-    </div>
+      
+      
+      
+      
+      
 
 
     <!-- Articles -->
 
-    <div class="main-body2">
-      <div class="container-3">
+    <div class="main-body2 shadow-lg">
+      <div class="container-3 shadow-lg">
         <h1 class="h1-header-2">Articles</h1>
         <div class="accordion accordion-flush" id="accordionFlushExample">
           <div class="accordion-item">
@@ -147,12 +160,12 @@
 
     <!--  FORM  -->
 
-    <div class="container">
+    <div class="container shadow-lg">
       <div class="container-4">
         <main class="form-signin w-100 m-auto">
           <form>
             
-            <h1 class="h3 mb-3 fw-normal">Favourite Scientist</h1>
+            <h1 class="h3 mb-3 fw-normal">More Scientists</h1>
         
             <div class="form-floating">
               <input type="email" class="form-control" id="floatingInput" placeholder="">
@@ -167,7 +180,7 @@
             </div>
             
 
-            <div class="button-style"><button class="button-style btn btn-lg btn-primary" type="submit">Search</button></div>
+            <div class="button-style"><button class="button-style btn btn-lg btn-primary" type="submit" id="search-scientist">Search</button></div>
             
           </form>
         </main>

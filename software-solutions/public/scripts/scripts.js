@@ -28,18 +28,18 @@ function sumNumbers(array) {
 let array01 = [25,5,8,35,4,9,12,1,3,10]
 let array02 = [5,8,4,9,12];
 
-function printArray(arr) {
+function printArray(array) {
   for (let q = 0; q < array.length; q++) {
-    console.log(array[q]);
+    console.log(`Here is a single element in the array: ${array[q]}`);
     
   }
 }
 
-document.getElementById("demo-01").innerHTML = (bubblesort(array01));
-document.getElementById("demo-02").innerHTML = (bubblesort(array02));
+console.log(`The Array is now sorted => ${bubblesort(array01)}`);
+console.log(`The Array is now sorted => ${bubblesort(array02)}`);
 
-document.getElementById("demo-03").innerHTML = (sumNumbers(array01));
-document.getElementById("demo-04").innerHTML = (sumNumbers(array02));
+console.log(`Sum of all numbers that are is divisible by 5: ${sumNumbers(array01)}`);
+console.log(`Sum of all numbers that are is divisible by 5: ${sumNumbers(array02)}`);
 
-document.getElementById("demo-05").innerHTML = (printArray(array01));
-document.getElementById("demo-06").innerHTML = (printArray(array02));
+printArray(array01)
+printArray(array02)

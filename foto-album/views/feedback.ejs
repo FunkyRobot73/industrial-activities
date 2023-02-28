@@ -1,0 +1,57 @@
+<%- include("header")-%>
+<%- include("banner")-%>
+
+
+<div class="jumbotron">
+  <div class="container">
+    <div>
+      <img class="ctf-logo" src="images/starfleet.png">
+    </div>
+    
+    
+    <div class="tweets">
+      
+      <div class="box">
+        
+          <div>
+            <h1>Feedback</h1>
+          </div>
+          <div>
+            <form class="form-1">
+            <h4>
+              <label>User Name:</label>
+              <input type="text" name="username" placeholder="minimum 6-characters"  required="required"  minlength="6">
+            </h4>
+            
+            <h4>
+              <label>Ship Name:</label>
+              <input type="text" name="ship-name" placeholder="NCC-1701D"  required="required">
+            </h4>
+        
+            <h4>
+              <label for="comments">Comments</label><br /> 
+	<textarea cols="40" rows="4" placeholder="minimum 50-characters"  required="required"  minlength="25"></textarea>
+            </h4>
+        
+            <button class="btn challenge-button feedback-btn mt-4" type="submit" value="submit">Submit</button>
+      
+        
+            </form>
+          </div>
+        
+        
+      
+      
+      </div>
+
+    </div>
+    
+
+    
+  </div>
+</div>
+
+  
+
+
+<%- include("footer")-%>

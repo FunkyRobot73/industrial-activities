@@ -1,0 +1,307 @@
+@font-face {
+  font-family: "lcars";
+  src: url("lcars.woff") format("woff");
+}
+
+body, nav.bg-dark, .jumbotron, .modal-content, .card {
+  background: black !important;;
+  color: whitesmoke;    
+}
+
+h1, h4 {
+  color: whitesmoke;   
+  text-align: left;
+}
+
+p {
+  color: whitesmoke; 
+  font-family: verdana;
+  font-size: 20px;
+}
+span {
+  color: #FFAD01A6;
+}
+
+.margin-it {
+  margin-left: 1em;
+}
+
+
+.jumbotron {
+  padding: 0rem 0rem 0rem 0rem !important;  
+}
+
+.divbackg {
+  margin-top: 30px;
+  background-image: url(/images/st-bg-1280.jpg);
+  background-repeat:no-repeat;
+  background-size: 100%;
+  position:absolute;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.text-contain-01 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* min-height: 200px; */
+}
+
+.text-contain-02 {
+  margin-top: 0em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: start;
+  /* min-height: 200px; */
+}
+
+
+
+
+
+.gallery {
+  padding-top:4em;
+  padding-bottom: 4em;
+}
+
+table.table td, table.table th {
+  background: #222;  
+  border: black solid 5px;
+}
+
+table.table tr:hover td, table.table tr:hover th {
+  background: #444 !important;
+}
+
+a {
+  color: white;
+}
+
+
+.ctf-logo {
+  height: 100px;
+  margin: auto !important;
+
+  width: auto;
+}
+
+.contain {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* black backgrounds, white text */
+
+
+
+/* apply lcars font to various elements */
+
+nav.navbar a, h1, h2, h3, .challenge-button, .modal-content h2, .modal-content h3, .modal-content ul.nav-tabs li a, .modal-content button {
+  font-family: "lcars" !important;;
+  text-transform: uppercase;
+}
+
+nav.navbar a, .challenge-button, .modal-content ul.nav-tabs li a, .modal-content button {
+  font-size: 2rem;
+}
+
+code {
+  text-transform: none;
+}
+
+/* top navbar lcars curves */
+
+nav .container {
+  padding: 15px 30px;
+  border-style: solid;
+  border-color: orange;
+  border-width: 0px 70px 15px 70px;
+  border-bottom-left-radius: 100px 50px;
+  border-bottom-right-radius: 100px 50px;
+}
+
+.container-top {
+  padding: 15px 30px;
+  border-style: solid;
+  border-color: orange;
+  border-width: 0px 70px 15px 70px;
+  border-bottom-left-radius: 100px 50px;
+  border-bottom-right-radius: 100px 50px;
+}
+
+.container-bottom {
+  padding: 30px 15px !important;
+  border-style: solid !important;
+  border-color: #97A !important;
+  border-width: 0px 0px 25px 0px !important;
+  border-bottom-left-radius: 50px 50px !important;
+  border-bottom-right-radius: 100px 50px !important;
+}
+
+/* top navbar lcars buttons */
+
+nav ul a {
+  background: orange;
+  margin: 0 3px;
+  padding-right: 10-px !important;
+  padding-left: 10px !important;;
+  color: black !important;
+  /* border-radius: 0 !important; */
+}
+
+nav ul li:first-child a {
+  border-radius: 20px 0px 0px 20px;
+  padding-left: 12px !important;;
+}
+
+.middle {
+  border-radius: 0px 0px 0px 0px !important;
+  padding-left: 12px !important;;
+}
+
+nav ul li:last-child a {
+  border-radius: 0px 20px 20px 0px;
+  padding-right: 12px !important;
+}
+
+/* randomish nav button colors */
+
+nav ul:nth-child(1) li:nth-child(3n) a, nav ul:nth-child(3) li:nth-child(2n) a {
+  background-color: #FC6 !important;
+}
+
+nav ul:nth-child(1) li:nth-child(1) a, nav ul:nth-child(3) li:nth-child(3n) a {
+  background-color: #97A !important;
+}
+
+nav ul:nth-child(1) li:last-child a, nav ul:nth-child(3) li:nth-child(6) a {
+  background-color: #C66 !important;
+}
+
+
+/* page/section header lcars curves */
+
+.jumbotron .container {
+  padding: 15px 30px;
+  border-style: solid;
+  border-color: #97A;
+  border-width: 10px 50px 00px 50px;
+  border-top-left-radius: 80px;
+  border-top-right-radius: 80px;   
+}
+
+/* challenge buttons */
+
+.challenge-button {
+  background: orange;
+  border-radius: 50px 50px 50px 50px;
+  box-shadow: none;
+  font-weight: lighter;
+  white-space: normal;
+  width: 100%;
+}
+.car {
+  padding: auto;
+}
+
+.feedback-btn {
+  width: 200px;
+}
+.challenge-button i.corner-button-check {
+  margin-top: 38px;
+  margin-right: 50px;
+}
+
+.challenge-button.solved-challenge {
+  background-color: orange !important;
+  opacity: 0.4;
+}
+
+.challenge-button:hover {
+  opacity: 0.6;
+}
+
+
+
+.tweets {
+  border-style: solid;
+  border-color: #C66;
+  border-width: 7px 40px 7px 00px;
+  border-radius: 0px 60px 60px 0px / 30px !important;;
+  margin: 10px 0 10px 0;
+  position: relative;
+  left: 30px;  
+  padding-bottom: 25px;
+  padding-top: 25px !important;  
+}
+
+/* modal */
+
+.modal-content {
+  border-style: solid;
+  border-color: #99c;
+  border-width: 15px 5px 15px 50px;
+  border-radius: 80px / 40px !important;
+}
+
+.modal-content ul.nav-tabs {
+  border: none;  
+}
+
+.modal-content ul.nav-tabs li a {
+  border-radius: 20px;
+  background: orange;
+  color: white !important;;
+  font-weight: lighter;
+  border: none;
+  margin: 0 5px;
+}
+
+.modal-content ul.nav-tabs li a.active {
+  background-color: orange;
+  opacity: 0.5;
+}
+
+.modal-content ul.nav-tabs li a {
+  border-radius: 20px;
+}
+
+.modal-content button, .modal-content input {
+  border-radius: 25px;
+}
+
+.modal-content input {
+  border: solid 1px black;
+  background: #333;
+}
+
+.modal-content button {
+  background-color: orange;
+  color: white;
+    font-weight: lighter;
+}
+
+
+.press {
+  scale: 90%;
+}
+.press:hover {
+  transform: scale(1.1);
+  z-index: 2;
+}
+
+.form-1 {
+  margin-left: 100px;
+  padding: 10px 0 10px 0;
+  text-align: left;
+  margin-left: 20px;
+}

@@ -237,7 +237,7 @@ nav ul:nth-child(1) li:last-child a, nav ul:nth-child(3) li:nth-child(6) a {
   border-color: #C66;
   border-width: 7px 40px 7px 00px;
   border-radius: 0px 60px 60px 0px / 30px !important;;
-  margin: 10px 0 10px 0;
+  margin: 10px 20px 10px 20px;
   position: relative;
   left: 30px;  
   padding-bottom: 25px;
@@ -300,8 +300,8 @@ nav ul:nth-child(1) li:last-child a, nav ul:nth-child(3) li:nth-child(6) a {
 }
 
 .form-1 {
-  margin-left: 100px;
+  margin-left: 100px !important;
   padding: 10px 0 10px 0;
   text-align: left;
-  margin-left: 20px;
+  
 }

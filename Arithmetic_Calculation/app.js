@@ -1,4 +1,8 @@
 const express = require("express");
+const add = require("./addition");
+const sub = require("./subtraction");
+const mul = require("./multiplication");
+const div = require("./division");
 const app = express();
 
 app.use(express.urlencoded({extended: false}));
@@ -23,30 +27,16 @@ app.get("/add/:num1/:num2", function(req, res) {
 });
 
 app.get("/sub/:num1/:num2", function(req, res) {
-    let num1 = parseInt(req.params.num1);
-    let num2 = parseInt(req.params.num2);
-
-    let total = (num1 - num2).toString();
-    res.send(total)
-    console.log(total);
+    sub((req.params.num1),(req.params.num2));
 });
 
 app.get("/mul/:num1/:num2", function(req, res) {
-    let num1 = parseInt(req.params.num1);
-    let num2 = parseInt(req.params.num2);
-
-    let total = (num1 * num2).toString();
-    res.send(total)
-    console.log(total);
+    mul((req.params.num1),(req.params.num2));
 });
 
 app.get("/div/:num1/:num2", function(req, res) {
-    let num1 = parseInt(req.params.num1);
-    let num2 = parseInt(req.params.num2);
-
-    let total = (num1 / num2);
-    // res.send(total)
-    console.log(total);
+    div((req.params.num1),(req.params.num2));
+    
 });
 
 

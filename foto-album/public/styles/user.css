@@ -305,3 +305,13 @@ nav ul:nth-child(1) li:last-child a, nav ul:nth-child(3) li:nth-child(6) a {
   text-align: left;
   
 }
+
+.vertical-title {
+  writing-mode: vertical-lr;
+}
+
+.cart {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}

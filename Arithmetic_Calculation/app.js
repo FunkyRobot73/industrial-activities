@@ -3,70 +3,52 @@ const app = express();
 
 app.use(express.urlencoded({extended: false}));
 
-let students = [
-    {id: 01, name: "Bruce Banner", age: 32, city: "Gotham"},
-    {id: 02, name: "Peter Parker", age: 25, city: "New York"},
-    {id: 03, name: "Logan", age: 125, city: "Toronto"},
-    {id: 04, name: "Clark Kent", age: 29, city: "Metropolis"}
-];
 
-//Get All Students
 
-app.get("/students", function(req, res) {
-    res.send(students);
+//GET route that will supply arithmetic
+
+app.get("/", function(req, res) {
+    res.send("Calculator (Add/Sub/Mult/Div)");
 });
 
-//Create A Student
+//get route that will supply arithmetic
 
-app.post("/students", function(req, res) {
-    let student_data = req.body;
-    student_data.id = parseInt(student_data.id);
-    students.push(student_data);
+app.get("/add/:num1/:num2", function(req, res) {
+    let num1 = parseInt(req.params.num1);
+    let num2 = parseInt(req.params.num2);
 
-    res.send(student_data);
-})
-
-app.get("/students/:student_id", function(req, res) {
-    let student_id = parseInt(req.params.student_id);
-    let student_data = students.find(function(item) {
-        return item.id === student_id
-    })
-    res.send(student_data.name)
+    let total = (num1 + num2).toString();
+    res.send(total)
+    console.log(total);
 });
 
-app.put("/students/:student_id", function(req, res) {
-    let student_id = parseInt(req.params.student_id);
+app.get("/sub/:num1/:num2", function(req, res) {
+    let num1 = parseInt(req.params.num1);
+    let num2 = parseInt(req.params.num2);
 
-    let student_data = req.body;
-    student_data.id = parseInt(student_data.id);
-    student_data.age = parseInt(student_data.age);
+    let total = (num1 - num2).toString();
+    res.send(total)
+    console.log(total);
+});
 
-    let index = students.findIndex(function(item) {
-        return item.id === student_data.id;
-        
-    });
+app.get("/mul/:num1/:num2", function(req, res) {
+    let num1 = parseInt(req.params.num1);
+    let num2 = parseInt(req.params.num2);
 
-    students[index] = student_data;
+    let total = (num1 * num2).toString();
+    res.send(total)
+    console.log(total);
+});
 
-    res.send(student_data);
+app.get("/div/:num1/:num2", function(req, res) {
+    let num1 = parseInt(req.params.num1);
+    let num2 = parseInt(req.params.num2);
 
-})
+    let total = (num1 / num2);
+    // res.send(total)
+    console.log(total);
+});
 
-app.patch('/students/:student_id', function(req, res) {
-    let student_id = parseInt(req.params.student_id)   
-    
-    let student_data = req.body;
-
-    //find the student array index
-    let index  = students.findIndex(function(item) {
-        return item.id === student_id;
-    });
-
-    students[index].name = student_data.name;
-
-    res.send(students[index]);
-
-})
 
 app.listen(3000, function() {
     console.log("Server is running on Port 3000!");

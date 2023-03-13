@@ -1,1 +1,7 @@
 software-solutions/node_modules/
+jla-database-app/node_modules/
+/jla-database-app/node_modules/
+jla-database-app/node_modules/*
+/jla-database-app/node_modules/*
+/jla-database-app/node_modules
+jla-database-app/node_modules

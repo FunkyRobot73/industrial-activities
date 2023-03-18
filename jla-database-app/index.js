@@ -5,6 +5,10 @@ const Member = require("./models/member")
 
 const Planet = require('./models/planet');
 
+//Middleware  --  cookie-parser
+var cookieParser = require('cookie-parser');
+app.use(cookieParser());
+
 //Define table relationships
 Member.belongsTo(Planet, {
     foreignKey: "home_planet"
@@ -24,6 +28,11 @@ config.authenticate().then(function(){
     console.log(err);
 });
 
+app.get('/', function(req, res){
+    res.cookie('name', 'express').send('cookie set'); 
+    console.log('Cookies: ', req.cookies);
+ });
+
 //Get all member Data
 app.get("/members", function(req, res) {
     Member.findAll().then(function(results){
@@ -32,6 +41,8 @@ app.get("/members", function(req, res) {
     }).catch(function(err) {
         res.status(500).send(err);
     });
+    console.log('Cookies: ', req.cookies);
+    console.log('Signed Cookies: ', req.signedCookies)
 })
 
 //Get all humans Data
